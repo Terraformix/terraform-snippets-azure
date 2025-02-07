@@ -9,7 +9,7 @@ This repository contains Terraform configurations for deploying and managing Azu
 ## 📂 Repository Structure
 
 
-### Load Balancers
+### ⚖️ Load Balancers
 
 - **Application Gateway**
   - Deploy Application gateway with multiple Virtual Machine Scale sets as Backend pools
@@ -22,12 +22,12 @@ This repository contains Terraform configurations for deploying and managing Azu
   - Configure Port-based routing to route traffic at Layer 4 to specific backend pools
   - Configure inbound NAT rules for troubleshooting direct SSH access to backend pool instances
 
-### Kubernetes
+### 🏗️ Kubernetes
 
 - **AKS Clusters**
   - Deploy Kubernetes cluster with multiple node pools (default and custom pool)
 
-### Virtual Machines
+### 🖥️ Virtual Machines
 
 - **Availability Sets**
   - Deploy Virtual machine Availability Set with Update and Fault domains for data center level redundancy
@@ -46,7 +46,7 @@ This repository contains Terraform configurations for deploying and managing Azu
   - Deploy Virtual Machine accessing a Storage account securely over the Azure backbone, using the service’s public IP, restricted to a specific VNet subnet.
 
 
-### App Services
+### 🌐 App Services
 
 - **App Service (Code)**
   - Deploy App Service using source code
@@ -67,7 +67,7 @@ This repository contains Terraform configurations for deploying and managing Azu
   - Deploy App Service to allow Outbound traffic from the App Service to resources inside a Virtual network
 
 
-### Containers
+### 🐳 Containers
 
 - **Container Apps**
   - Deploy Container App with a single revision and enabled Ingress traffic to allow HTTP traffic
@@ -79,13 +79,7 @@ This repository contains Terraform configurations for deploying and managing Azu
   - Deploy Container Registry to store Container images
 
 
-### Databases
-
-- **SQL Server DB**
-  - Deploy managed SQL database with firewall rules
-
-
-### Networking
+### 🛜 Networking
 
 - **Bastion Host**  
   - Deploy Bastion Host to allow secure RDP and SSH access to Virtual Machines in a Virtual network
@@ -95,7 +89,7 @@ This repository contains Terraform configurations for deploying and managing Azu
   - Deploy Virtual networks and configure Peering between them allowing for communication across Virtual networks
 
 
-### Security
+### 🔒Security
 
 - **Key Vault (RBAC)**
   - Deploy Key Vault with the recommended RBAC model
@@ -106,7 +100,7 @@ This repository contains Terraform configurations for deploying and managing Azu
   - Assign Access Policy to Service Principal to allow Administrative tasks
 
 
-### Storage
+### 💾 Databases and Storage
 
 - **Blob Storage**
   - Deploy Storage Account and a Container with a Blob
@@ -120,6 +114,9 @@ This repository contains Terraform configurations for deploying and managing Azu
 
 - **Table Storage**
   - Deploy Storage Account and a Table
+
+- **SQL Server DB**
+  - Deploy managed SQL database with firewall rules
 
 
 ## 🚀 Getting Started
